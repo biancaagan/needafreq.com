@@ -4,23 +4,32 @@
 
 html, body {
   display: flex;
-  margin: 0;
+  background-color: rgb(220, 220, 220);
+  text-align: center;
+  margin-top: 50px;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 canvas {
   display: block;
 }
 
-.container{
-  margin-left: 50px;
+button{
+  display: flex;
+  margin-top: 50px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   } */
 
