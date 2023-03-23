@@ -1,7 +1,26 @@
+*{
+  box-sizing: border-box;
+  }
+
 html, body {
+  display: flex;
   margin: 0;
   padding: 0;
 }
+
 canvas {
   display: block;
 }
+
+.container{
+  margin-left: 50px;
+}
+
+/* .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  } */
+
