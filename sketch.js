@@ -27,18 +27,18 @@ let blockW = 80;
 let blockH = 100;
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(600, 300);
   
   start = createButton('Spin');
   start.mouseClicked(() => startB = true);
-  start.position(width/2 - 110, 20);
+  // start.position(width/2 - 110, 20);
   start.size(100, 60);
   start.style("font-family", "Comic Sans MS");
   start.style("font-size", "30px");
   
   stop = createButton('Stop');
   stop.mouseClicked(() => stopB = true);
-  stop.position(width/2 + 10, 20);
+  // stop.position(width/2 + 10, 20);
   stop.size(100, 60);
   stop.style("font-family", "Comic Sans MS");
   stop.style("font-size", "30px");
@@ -62,7 +62,7 @@ function draw() {
   // Spin label
   if(startB == false && stopB == false){
     let num = 'Spin to shuffle';
-    text(num, width/2, 300);
+    // text(num, width/2, 300);
   } 
   
   if(startB == true){
@@ -73,7 +73,7 @@ function draw() {
     n5 = random(nums3);
     n6 = random(nums);
     num = 'Stop for number';
-    text(num, width/2, 300);
+    // text(num, width/2, 300);
     
     randomNum1 = random(nums2);
     randomNum2 = random(nums1);
@@ -101,17 +101,17 @@ function draw() {
   noFill();
   rect(width/2 - 265, height/3, blockW, blockH, 10);
   fill(0);
-  text(n1, width/2 - 225, height/2 + 12);
+  text(n1, width/2 - 225, height/2 + 30);
   
   noFill();
   rect(width/2 - 180, height/3, blockW, blockH, 10);
   fill(0);
-  text(n2, width/2 - 140, height/2 + 12);
+  text(n2, width/2 - 140, height/2 + 30);
   
   noFill();
   rect(width/2 - 95, height/3, blockW, blockH, 10);
   fill(0);
-  text(n3, width/2 - 55, height/2 + 12);
+  text(n3, width/2 - 55, height/2 + 30);
   
   // dot
   fill(0);
@@ -122,15 +122,15 @@ function draw() {
   noFill();
   rect(width/2 + 15, height/3, blockW, blockH, 10);
   fill(0);
-  text(n4, width/2 + 55, height/2 + 12);
+  text(n4, width/2 + 55, height/2 + 30);
   
   noFill();
   rect(width/2 + 100, height/3, blockW, blockH, 10);
   fill(0);
-  text(n5, width/2 + 140, height/2 + 12);
+  text(n5, width/2 + 140, height/2 + 30);
   
   noFill();
   rect(width/2 + 185, height/3, blockW, blockH, 10);
   fill(0);
-  text(n6, width/2 + 225, height/2 + 12);
+  text(n6, width/2 + 225, height/2 + 30);
 }
