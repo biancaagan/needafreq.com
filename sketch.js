@@ -32,13 +32,13 @@ function setup() {
   start = createButton(" SPIN ");
   start.mouseClicked(() => startB = true);
   // start.position(width/2 - 110, 20);
-  start.size(100, 60);
+  start.size(120, 60);
   start.style("font-size", "30px");
   
   stop = createButton(" STOP ");
   stop.mouseClicked(() => stopB = true);
   // stop.position(width/2 + 10, 20);
-  stop.size(100, 60);
+  stop.size(120, 60);
   stop.style("font-size", "30px");
     
   randomNum1 = random(nums2);

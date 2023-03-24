@@ -18,8 +18,8 @@ p{
 }
 
 canvas {
-  /* margin: 0 auto;
-  display: block; */
+  margin: 0 auto;
+  display: block;
 }
 
 .header{
@@ -55,6 +55,7 @@ button{
   padding: 0;
   justify-content: center;
   align-items: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-align: center;
 }
 
