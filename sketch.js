@@ -29,18 +29,16 @@ let blockH = 100;
 function setup() {
   createCanvas(600, 300);
   
-  start = createButton('Spin');
+  start = createButton(" SPIN ");
   start.mouseClicked(() => startB = true);
   // start.position(width/2 - 110, 20);
   start.size(100, 60);
-  start.style("font-family", "Comic Sans MS");
   start.style("font-size", "30px");
   
-  stop = createButton('Stop');
+  stop = createButton(" STOP ");
   stop.mouseClicked(() => stopB = true);
   // stop.position(width/2 + 10, 20);
   stop.size(100, 60);
-  stop.style("font-family", "Comic Sans MS");
   stop.style("font-size", "30px");
     
   randomNum1 = random(nums2);
@@ -92,23 +90,25 @@ function draw() {
     n5 = randomNum5;
     n6 = randomNum6;
   }
+
+
   
 
   textAlign(CENTER);
   textSize(80);
   
   // Number blocks
-  noFill();
+  fill(255);
   rect(width/2 - 265, height/3, blockW, blockH, 10);
   fill(0);
   text(n1, width/2 - 225, height/2 + 30);
   
-  noFill();
+  fill(255);
   rect(width/2 - 180, height/3, blockW, blockH, 10);
   fill(0);
   text(n2, width/2 - 140, height/2 + 30);
   
-  noFill();
+  fill(255);
   rect(width/2 - 95, height/3, blockW, blockH, 10);
   fill(0);
   text(n3, width/2 - 55, height/2 + 30);
@@ -119,17 +119,17 @@ function draw() {
   fill(0);
   
   // Number blocks
-  noFill();
+  fill(255);
   rect(width/2 + 15, height/3, blockW, blockH, 10);
   fill(0);
   text(n4, width/2 + 55, height/2 + 30);
   
-  noFill();
+  fill(255);
   rect(width/2 + 100, height/3, blockW, blockH, 10);
   fill(0);
   text(n5, width/2 + 140, height/2 + 30);
   
-  noFill();
+  fill(255);
   rect(width/2 + 185, height/3, blockW, blockH, 10);
   fill(0);
   text(n6, width/2 + 225, height/2 + 30);
